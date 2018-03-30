@@ -83,6 +83,12 @@
     },
     "done": true
   },
+  "minecraft:end/elytra": {
+    "criteria": {
+      "elytra": "2018-03-30 22:53:43 +0100"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/painting": {
     "criteria": {
       "has_wool": "2018-03-30 21:02:16 +0100"
