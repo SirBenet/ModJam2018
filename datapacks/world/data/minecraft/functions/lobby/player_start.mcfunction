@@ -1,7 +1,8 @@
 # Called for respawning, relogging, new player, and on lobby start
-gamemode adventure @a[gamemode=!creative]
+gamemode adventure @s[gamemode=!creative]
 tp @s 0 62 0
 clear @s
+xp add @s -1000000000 levels
 effect give @s resistance 1000000 4 true
 effect give @s saturation 1000000 0 true
 scoreboard players enable @s TransportBalloon

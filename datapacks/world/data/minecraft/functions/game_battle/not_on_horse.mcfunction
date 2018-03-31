@@ -1,4 +1,4 @@
-#TODO: Teleport to my horse
+#TODO: Teleport to my horse, facing downwards
 
 # Give title
 title @s times 0 5 0

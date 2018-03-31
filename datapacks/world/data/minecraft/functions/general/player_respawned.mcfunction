@@ -1,5 +1,5 @@
 # Player died and respawned
-execute as @a at @s run particle minecraft:ambient_entity_effect ~ ~1 ~ 0 0.5 0 1 200
+execute as @s at @s run particle minecraft:ambient_entity_effect ~ ~1 ~ 0 0.5 0 1 200
 
 # Respawned player functions for each state
 execute if score State Global matches 0 run function lobby/player_start

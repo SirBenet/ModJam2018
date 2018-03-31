@@ -1,5 +1,5 @@
 # Create
-summon armor_stand ~ ~ ~ {ActiveEffects:[{Id:25,Duration:2147483647,ShowParticles:0b,Amplifier:1}],Tags:["BounceBalloon","BounceBalloonStand","BounceBalloonNew"],Invisible:1b,Invulnerable:1b,Marker:1b,ArmorItems:[{},{},{},{id:"leather_boots",Count:1,tag:{Damage:1,Unbreakable:1b,display:{color:99999}}}]}
+summon armor_stand ~ ~ ~ {ActiveEffects:[{Id:25,Duration:2147483647,ShowParticles:0b,Amplifier:1}],Tags:["BounceBalloon","BounceBalloonStand","BounceBalloonNew"],Invisible:1b,Invulnerable:1b,Marker:1b,ArmorItems:[{},{},{},{id:"leather_boots",Count:1,tag:{Damage:1,Unbreakable:1b,display:{color:99999}}}],DisabledSlots:2039583}
 
 # Pick random colour 0 to 16777215
 function general/random_number

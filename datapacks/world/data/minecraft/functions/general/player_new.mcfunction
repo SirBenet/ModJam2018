@@ -1,5 +1,6 @@
 # First-time player, has not logged in before
 tag @s add Initiated
+team join Default @s
 tellraw @s ["",{"text":"⚈ Welcome to ","color":"aqua"},{"text":"BALLOON BASH ","bold":true,"color":"aqua"},{"text":"⚈","color":"aqua"},{"text":"\n"},{"text":"a map by ","color":"gray"},{"text":"SirBenet","color":"white"},{"text":", for Modjam 5","color":"gray"}]
 execute as @a at @s run playsound minecraft:entity.puffer_fish.blow_up master @s ~ ~ ~ 20 2
 #TODO: resource pack download link

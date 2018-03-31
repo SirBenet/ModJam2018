@@ -1,5 +1,5 @@
 # Create
-summon snowball ~ ~-3 ~ {Tags:["BounceBalloon","BounceBalloonSnowball","BounceBalloonLobby"],NoGravity:1b,Motion:[0.0,0.03,0.0],Passengers:[{id:"armor_stand",Tags:["BounceBalloon","BounceBalloonStand","BounceBalloonLobby","BounceBalloonNew"],Invisible:1b,Invulnerable:1b,Marker:1b,ArmorItems:[{},{},{},{id:"leather_boots",Count:1,tag:{Damage:1,Unbreakable:1b,display:{color:99999}}}]}]}
+summon snowball ~ ~-3 ~ {Tags:["BounceBalloon","BounceBalloonSnowball","BounceBalloonLobby"],NoGravity:1b,Motion:[0.0,0.03,0.0],Passengers:[{id:"armor_stand",Tags:["BounceBalloon","BounceBalloonStand","BounceBalloonLobby","BounceBalloonNew"],Invisible:1b,Invulnerable:1b,Marker:1b,ArmorItems:[{},{},{},{id:"leather_boots",Count:1,tag:{Damage:1,Unbreakable:1b,display:{color:99999}}}],DisabledSlots:2039583}]}
 
 # Pick random colour 0 to 16777215
 function general/random_number

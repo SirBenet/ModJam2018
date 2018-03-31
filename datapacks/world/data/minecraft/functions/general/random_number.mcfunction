@@ -1,4 +1,5 @@
 # Uses an LCG to store a random number into Seed's Random score
+# https://en.wikipedia.org/wiki/Linear_congruential_generator
 scoreboard players operation Seed Random *= Multiplier Random
 scoreboard players operation Seed Random += Increment Random
 
