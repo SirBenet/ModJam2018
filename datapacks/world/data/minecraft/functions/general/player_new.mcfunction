@@ -5,6 +5,10 @@ execute as @a at @s run playsound minecraft:entity.puffer_fish.blow_up master @s
 #TODO: resource pack download link
 tellraw @s {"translate":"Click this for the resource pack","color":"aqua","clickEvent":{"action":"open_url","value":"https://www.google.com/"}}
 
+# ID
+scoreboard players add Next ID 1
+scoreboard players operation @s ID = Next ID
+
 # New player functions for each state
 execute if score State Global matches 0 run function lobby/player_start
 execute if score State Global matches 1 run function game_battle/player_new

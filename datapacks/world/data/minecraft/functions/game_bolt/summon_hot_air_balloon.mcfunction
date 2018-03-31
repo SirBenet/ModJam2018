@@ -1,0 +1,3 @@
+summon phantom ~ ~ ~ {Invulnerable:1b,NoAI:1b,Silent:1b,Passengers:[{id:"pig",Saddle:1b,NoAI:1b,Silent:1b,Invulnerable:1b},{id:"armor_stand",HandItems:[{id:"leather_boots",Count:1,tag:{Damage:4,Unbreakable:1b}},{}],Pose:{RightArm:[0f,0f,0f]},Passengers:[{id:"armor_stand",Tags:["Spacer"],Passengers:[{id:"armor_stand",Tags:["Spacer"],Passengers:[{id:"armor_stand",Tags:["Spacer"],Passengers:[{id:"armor_stand",Passengers:[{id:"armor_stand",Tags:["Spacer"],HandItems:[{id:"leather_boots",Count:1,tag:{Damage:3,Unbreakable:1b}},{}],Pose:{RightArm:[0f,0f,0f]}}]}]}]}]}]}]}
+
+#TODO: Apply random colour 

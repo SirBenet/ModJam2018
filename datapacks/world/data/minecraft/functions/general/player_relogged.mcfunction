@@ -1,5 +1,5 @@
 # Non-new player relogged
-particle minecraft:ambient_entity_effect ~ ~1 ~ 0 0.5 0 1 200
+execute as @a at @s run particle minecraft:ambient_entity_effect ~ ~1 ~ 0 0.5 0 1 200
 execute as @a at @s run playsound minecraft:entity.puffer_fish.blow_up master @s ~ ~ ~ 20 2
 scoreboard players set @s LeaveGame 0
 

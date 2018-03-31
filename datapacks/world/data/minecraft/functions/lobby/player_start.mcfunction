@@ -1,4 +1,5 @@
 # Called for respawning, relogging, new player, and on lobby start
+gamemode adventure @a[gamemode=!creative]
 tp @s 0 62 0
 clear @s
 effect give @s resistance 1000000 4 true
