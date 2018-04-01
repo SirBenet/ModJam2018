@@ -1,9 +1,9 @@
 # Battle
-tp @s[scores={TransportBalloon=1}] 32.36 62 14.54 575.26 9.02
+tp @s[scores={TransportBalloon=1}] 17.41 65.00 1.88 673.01 11.12
 # Bounce
-tp @s[scores={TransportBalloon=2}] -8.77 85 -37.48 156.10 9.44
+tp @s[scores={TransportBalloon=2}] -7.06 86.94 -39.28 282.39 6.09
 # Bolt
-tp @s[scores={TransportBalloon=3}] -22.14 66 1.02 187.57 6.08
+tp @s[scores={TransportBalloon=3}] -19.63 66.00 11.13 440.99 13.64
 
 # Effects
 effect give @s minecraft:levitation 3 253 true
