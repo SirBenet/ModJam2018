@@ -1,2 +1,5 @@
 execute as @a at @s run function game_bounce/per_player
-# Spawn in balloons from 1040 83 1040 to 1007 83 1007
+
+# Spawn ballons, slower as game progresses
+scoreboard players remove BalloonSpawnTimer Global 10
+execute if score BalloonSpawnTimer Global matches ..0 run function game_bounce/spawn_random_balloon

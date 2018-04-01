@@ -7,4 +7,5 @@ scoreboard players operation RandomColour Workspace = Seed Random
 scoreboard players operation RandomColour Workspace %= 16777215 Constants
 execute if score RandomColour Workspace matches ..0 run scoreboard players operation RandomColour Workspace *= -1 Constants
 execute store result entity @e[type=armor_stand,tag=BounceBalloonNew,limit=1] ArmorItems[3].tag.display.color int 1 run scoreboard players get RandomColour Workspace
+
 tag @e[type=armor_stand,tag=BounceBalloonNew] remove BounceBalloonNew
