@@ -1,33 +1,23 @@
-#scoreboard players operation @e[type=armor_stand,tag=BattleBalloon] ID -= @s ID
-#
-## Get balloon's motion
-#execute store result score CurrentX Workspace run data get entity @e[type=armor_stand,tag=BattleBalloon,scores={ID=0},limit=1,sort=nearest] Motion[0] 32768
-#execute store result score CurrentZ Workspace run data get entity @e[type=armor_stand,tag=BattleBalloon,scores={ID=0},limit=1,sort=nearest] Motion[2] 32768
-#
-## Check if colliding with anything
-#execute as @e[type=armor_stand,tag=BattleBalloon,scores={ID=0},limit=1,sort=nearest] at @s run function game_battle/check_collision
-#scoreboard players operation @s MotionX = CurrentX Workspace
-#scoreboard players operation @s MotionZ = CurrentZ Workspace
-#
-## Add my input to balloon's motion, store back
-#execute store result score InputX Workspace run data get entity @s Motion[0] 32768
-#execute store result score InputZ Workspace run data get entity @s Motion[2] 32768
-#scoreboard players operation InputX Workspace *= BattleBalloonSpeed Constants
-#scoreboard players operation InputZ Workspace *= BattleBalloonSpeed Constants
-#scoreboard players operation @s MotionX += InputX Workspace
-#scoreboard players operation @s MotionZ += InputZ Workspace
-#
-#execute store result entity @e[type=armor_stand,tag=BattleBalloon,scores={ID=0},limit=1,sort=nearest] Motion[0] double 0.000030517578125 run scoreboard players get @s MotionX
-#execute store result entity @e[type=armor_stand,tag=BattleBalloon,scores={ID=0},limit=1,sort=nearest] Motion[2] double 0.000030517578125 run scoreboard players get @s MotionZ
-#
-## Store my rotation
-#execute store result entity @e[type=armor_stand,tag=BattleBalloon,scores={ID=0},limit=1,sort=nearest] Rotation[0] float 1 run data get entity @s Rotation[0]
-#
-## Air merge to make smooth
-#scoreboard players add @s AirCycle 1
-#execute if entity @s[scores={AirCycle=1}] run data merge entity @e[type=armor_stand,tag=BattleBalloon,scores={ID=0},limit=1,sort=nearest] {Air:0s}
-#execute if entity @s[scores={AirCycle=2}] run data merge entity @e[type=armor_stand,tag=BattleBalloon,scores={ID=0},limit=1,sort=nearest] {Air:1s}
-#scoreboard players set @s[scores={AirCycle=2}] AirCycle 0
-#
-#
-#scoreboard players operation @e[type=armor_stand,tag=BattleBalloon] ID += @s ID
+scoreboard players operation @e[type=xp_orb,tag=HotAirBalloonOrb] ID -= @s ID
+
+# Get hot air balloon's motion
+execute store result score CurrentX Workspace run data get entity @e[type=xp_orb,tag=HotAirBalloonOrb,scores={ID=0},limit=1,sort=nearest] Motion[0] 32768
+execute store result score CurrentZ Workspace run data get entity @e[type=xp_orb,tag=HotAirBalloonOrb,scores={ID=0},limit=1,sort=nearest] Motion[2] 32768
+
+# Check if colliding with anything
+#TODO: execute as @e[type=xp_orb,tag=HotAirBalloonOrb,scores={ID=0},limit=1,sort=nearest] at @s run function game_battle/check_collision
+scoreboard players operation @s MotionX = CurrentX Workspace
+scoreboard players operation @s MotionZ = CurrentZ Workspace
+
+# Add my input to hot air balloon's motion, store back
+execute store result score InputX Workspace run data get entity @s Motion[0] 32768
+execute store result score InputZ Workspace run data get entity @s Motion[2] 32768
+scoreboard players operation InputX Workspace *= HotAirBalloonSpeed Constants
+scoreboard players operation InputZ Workspace *= HotAirBalloonSpeed Constants
+scoreboard players operation @s MotionX += InputX Workspace
+scoreboard players operation @s MotionZ += InputZ Workspace
+
+execute store result entity @e[type=xp_orb,tag=HotAirBalloonOrb,scores={ID=0},limit=1,sort=nearest] Motion[0] double 0.000030517578125 run scoreboard players get @s MotionX
+execute store result entity @e[type=xp_orb,tag=HotAirBalloonOrb,scores={ID=0},limit=1,sort=nearest] Motion[2] double 0.000030517578125 run scoreboard players get @s MotionZ
+
+scoreboard players operation @e[type=xp_orb,tag=HotAirBalloonOrb] ID += @s ID
