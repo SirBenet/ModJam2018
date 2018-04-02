@@ -1,4 +1,7 @@
-#TODO: Teleport to my horse, facing downwards
+# Teleport to my horse, facing downwards
+scoreboard players operation @e[type=armor_stand,tag=BattleBalloon] ID -= @s ID
+execute at @e[type=armor_stand,tag=BattleBalloon,scores={ID=0},limit=1,sort=nearest] run tp @s ~ ~5 ~ ~ 90
+scoreboard players operation @e[type=armor_stand,tag=BattleBalloon] ID += @s ID
 
 # Give title
 title @s times 0 5 0
