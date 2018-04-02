@@ -8,4 +8,7 @@ tellraw @a ["",{"text":"Move with ","color":"aqua"},{"keybind":"key.forward"},{"
 
 spreadplayers 4007.0 4520.0 3 40 false @a
 
+scoreboard players set BoltTimerCentis Global 0
+scoreboard players set BoltTimerSeconds Global 0
+
 execute as @a at @s run function game_bolt/player_start

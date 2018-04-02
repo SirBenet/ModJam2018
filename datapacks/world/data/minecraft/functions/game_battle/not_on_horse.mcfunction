@@ -7,3 +7,7 @@ scoreboard players operation @e[type=armor_stand,tag=BattleBalloon] ID += @s ID
 title @s times 0 5 0
 title @s subtitle {"text":"to start playing","color":"aqua"}
 title @s title [{"text":"Press ","color":"aqua"},{"keybind":"key.use","bold":"true"}]
+
+# Reset motion
+effect give @s minecraft:levitation 1 255 true
+execute at @s run tp @s @s

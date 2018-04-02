@@ -5,7 +5,9 @@ execute store result score CurrentX Workspace run data get entity @e[type=armor_
 execute store result score CurrentZ Workspace run data get entity @e[type=armor_stand,tag=BattleBalloon,scores={ID=0},limit=1,sort=nearest] Motion[2] 32768
 
 # Check if colliding with anything
+tag @s add MyPlayer
 execute as @e[type=armor_stand,tag=BattleBalloon,scores={ID=0},limit=1,sort=nearest] at @s run function game_battle/check_collision
+tag @s remove MyPlayer
 scoreboard players operation @s MotionX = CurrentX Workspace
 scoreboard players operation @s MotionZ = CurrentZ Workspace
 

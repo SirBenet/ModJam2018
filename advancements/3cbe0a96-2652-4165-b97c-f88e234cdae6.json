@@ -1,1 +1,14 @@
-{}
+{
+  "minecraft:recipes/building_blocks/andesite": {
+    "criteria": {
+      "has_stone": "2018-04-02 22:51:49 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_diorite": {
+    "criteria": {
+      "has_stone": "2018-04-02 22:51:49 +0100"
+    },
+    "done": true
+  }
+}
