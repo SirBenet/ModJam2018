@@ -1,5 +1,5 @@
 # Called for respawning, relogging, new player, and on lobby start
-gamemode adventure @s[gamemode=!creative]
+gamemode adventure @s
 tp @s 0 62 0
 clear @s
 xp add @s -1000000000 levels
