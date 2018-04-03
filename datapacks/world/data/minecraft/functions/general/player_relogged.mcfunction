@@ -5,6 +5,6 @@ scoreboard players set @s LeaveGame 0
 
 # Relogged player functions for each state
 execute if score State Global matches 0 run function lobby/player_start
-execute if score State Global matches 1 run function game_battle/player_relogged
-execute if score State Global matches 2 run function game_bolt/player_relogged
-execute if score State Global matches 3 run function game_bounce/player_relogged
+execute if score State Global matches 1 run function game_battle/player_new
+execute if score State Global matches 2 run function game_bolt/player_new
+execute if score State Global matches 3 run function game_bounce/player_new

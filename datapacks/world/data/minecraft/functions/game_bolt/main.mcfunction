@@ -1,4 +1,4 @@
-execute as @a at @s run function game_bolt/per_player
+execute as @a[gamemode=!spectator] at @s run function game_bolt/per_player
 
 # Timer
 scoreboard players add BoltTimerCentis Global 5

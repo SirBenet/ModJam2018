@@ -13,4 +13,4 @@ execute as @e[type=armor_stand,tag=HotAirBalloonNew] store result entity @s Hand
 # Assign my ID
 scoreboard players operation @e[tag=HotAirBalloonNew] ID = @s ID 
 
-tag @e[type=armor_stand,tag=HotAirBalloonNew] remove HotAirBalloonNew
+tag @e[tag=HotAirBalloonNew] remove HotAirBalloonNew

@@ -1,0 +1,9 @@
+execute if entity @s[tag=BounceBalloonLobby1] run summon falling_block -9 52.3 -10 {BlockState:{Name:"redstone_block"},Time:1}
+execute if entity @s[tag=BounceBalloonLobby2] run summon falling_block -8 52.3 -10 {BlockState:{Name:"redstone_block"},Time:1}
+execute if entity @s[tag=BounceBalloonLobby3] run summon falling_block -7 52.3 -10 {BlockState:{Name:"redstone_block"},Time:1}
+execute if entity @s[tag=BounceBalloonLobby4] run summon falling_block -6 52.3 -10 {BlockState:{Name:"redstone_block"},Time:1}
+execute if entity @s[tag=BounceBalloonLobby5] run summon falling_block -5 52.3 -10 {BlockState:{Name:"redstone_block"},Time:1}
+execute if entity @s[tag=BounceBalloonLobby6] run summon falling_block -4 52.3 -10 {BlockState:{Name:"redstone_block"},Time:1}
+execute if entity @s[tag=BounceBalloonLobby7] run summon falling_block -3 52.3 -10 {BlockState:{Name:"redstone_block"},Time:1}
+execute if entity @s[tag=BounceBalloonLobby8] run summon falling_block -2 52.3 -10 {BlockState:{Name:"redstone_block"},Time:1}
+execute if entity @s[tag=BounceBalloonLobby9] run summon falling_block -1 52.3 -10 {BlockState:{Name:"redstone_block"},Time:1}

@@ -4,8 +4,8 @@ scoreboard players operation @e[type=xp_orb,tag=HotAirBalloonOrb] ID -= @s ID
 execute store result score CurrentX Workspace run data get entity @e[type=xp_orb,tag=HotAirBalloonOrb,scores={ID=0},limit=1,sort=nearest] Motion[0] 32768
 execute store result score CurrentZ Workspace run data get entity @e[type=xp_orb,tag=HotAirBalloonOrb,scores={ID=0},limit=1,sort=nearest] Motion[2] 32768
 
-# Check if colliding with anything
-#TODO: execute as @e[type=xp_orb,tag=HotAirBalloonOrb,scores={ID=0},limit=1,sort=nearest] at @s run function game_battle/check_collision
+# Was planning to do collision like with battle, but decided against it
+#execute as @e[type=xp_orb,tag=HotAirBalloonOrb,scores={ID=0},limit=1,sort=nearest] at @s run function game_battle/check_collision
 scoreboard players operation @s MotionX = CurrentX Workspace
 scoreboard players operation @s MotionZ = CurrentZ Workspace
 
