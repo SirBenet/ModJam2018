@@ -5,3 +5,4 @@ execute if score BoltTimerCentis Global matches 0 run tellraw @a [{"selector":"@
 execute if score BoltTimerCentis Global matches 5 run tellraw @a [{"selector":"@s","color":"aqua"}, " finished in ", {"score":{"name":"BoltTimerSeconds","objective":"Global"}}, ".05 seconds"]
 execute if score BoltTimerCentis Global matches 10.. run tellraw @a [{"selector":"@s","color":"aqua"}, " finished in ", {"score":{"name":"BoltTimerSeconds","objective":"Global"}}, ".", {"score":{"name":"BoltTimerCentis","objective":"Global"}}, " seconds"]
 tellraw @s {"text":"The game will end when everyone reaches the finish line","color":"aqua"}
+gamemode spectator @s

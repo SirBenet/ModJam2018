@@ -31,3 +31,17 @@ tag @e[type=armor_stand,tag=BounceBalloonLobbyNew] remove BounceBalloonLobbyNew
 
 # Punchable balloon
 function debug/summon_punchable_lobby_balloon
+
+# Hot air balloons
+execute positioned -48 71 -30 run function debug/summon_hot_air_lobby_balloon
+tag @e[type=armor_stand,tag=HotAirBalloonLobbyNew] add HotAirBalloonLobby1
+tag @e[tag=HotAirBalloonLobbyNew] remove HotAirBalloonLobbyNew
+
+execute positioned 80 90 -80 run function debug/summon_hot_air_lobby_balloon
+tag @e[type=armor_stand,tag=HotAirBalloonLobbyNew] add HotAirBalloonLobby2
+tag @e[tag=HotAirBalloonLobbyNew] remove HotAirBalloonLobbyNew
+
+execute positioned -21 113 37 run function debug/summon_hot_air_lobby_balloon
+tag @e[type=armor_stand,tag=HotAirBalloonLobbyNew] add HotAirBalloonLobby3
+tag @e[tag=HotAirBalloonLobbyNew] remove HotAirBalloonLobbyNew
+
